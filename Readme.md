@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Alexandre Rtveliashvili](https://up.htmlacademy.ru/htmlcss/25/user/796589).
-* Наставник: `Неизвестно`.
+* Наставник: [Константин Сёмин](https://up.htmlacademy.ru/htmlcss/25/user/39368)
 
 ---
 
