@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <base href="https://htmlacademy-htmlcss.github.io/796589-nerds-25/4/">
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a clss="main-header-logo">
+        <img src="img/png-nerds/nerds-logo.png" class="nerds-logo" width="160" height="65" alt="Нёрдс">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="studio.html">Студия</a></li>
+        <li><a href="customers.html">Клиенты</a></li>
+        <li><a href="store.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <ul class="user-navigation">
+        <img src="img/png-nerds/basket-icon.png" class="cart-icon" width="15" height="15">
+        <li class="cart">Корзина</li>
+      </ul>
+      <h1>Магазин готовых шаблонов</h1>
+  </header>
+  <main class="container">
+    <section class="search-settings">
+      <form class="filter" method="get" action="#">
+          <fieldset>
+            <legend>Сетка:</legend>
+      <ul class="net">
+        <li>
+          <input type="radio" name="adapted" id="adapted" checked>
+          <label for="adapted">Адаптивная</label>
+        </li>
+        <li>
+          <input type="radio" name="fixed" id="fixed">
+          <label for="fixed">Фиксированная</label>
+        </li>
+        <li>
+          <input type="radio" name="rubber" id="rubber">
+          <label for="rubber">Резиновая</label>
+        </li>
+      </ul>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>ОСОБЕННОСТИ:</legend>
+        <ul class="advantages">
+        <li>
+          <input type="checkbox" name="slider" id="slider" checked>
+          <label for="slider">Слайдер</label>
+        </li>
+        <li>
+          <input type="checkbox" name="advantage-block" id="advantage-block">
+          <label for="advantage-block">Блок преимуществ</label>
+        </li>
+        <li>
+          <input type="checkbox" name="news" checked id="news">
+          <label for="news">Новости</label>
+        </li>
+        <li>
+          <input type="checkbox" name="gallery" id="gallery">
+          <label for="gallery">Галерея</label>
+        </li>
+        <li>
+          <input type="checkbox" name="trash-bin" id="trash-bin">
+          <label for="trashbin">Корзина</label>
+        </li>
+      </ul>
+    </fieldset>
+  <button type="submit" name="show" value="ПОКАЗАТЬ">ПОКАЗАТЬ</button>
+    </section>
+    <section class="gallery">
+      <ul class="gallery">
+        <li><img src="img/png-nerds/img-sedona-jpg.png" class="img-sedonajpg" width="360" height="576">
+          <div class="sedona-info"><a class="item-name" href="sedona.html"></a>
+            <p>Информационный сайт
+              для туристов</p><span class="price">
+              </span>
+          </div>
+        </li>
+        <li><img src="img/png-nerds/img-pink-jpg.png" class="img-pinkjpg" width="360" height="576">
+          <div class="pink-info">
+          </div>
+        </li>
+        <li><img src="img/png-nerds/img-barbershop-jpg.png" class="img-barbershopjpg" width="360" height="576"></li>
+        <li><img src="img/png-nerds/img-mishka-jpg.png" class="img-mishkajpg" width="360" height="576"></li>
+        <li><img src="img/png-nerds/img-aplus-jpg.png" class="img-aplusjpg" width="360" height="576"></li>
+        <li><img src="img/png-nerds/img-kvast-jpg.png" class="img-kvastjpg" width="360" height="576"></li>
+      </ul>
+    </section>
+    <section class="contact-us">
+      <h2>Напишите нам</h2>
+      <form class="contact-form" action="#" method="post">
+  <p class="contact-item">
+    <label for="contact-name">Ваше имя:</label>
+  <input id="contact-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+  </p>
+  <p class="contact-item">
+    <label for="contact-email">Ваш e-mail:</label>
+    <input id="contact-email" type="text" name="email" value="" placeholder="email@example.com">
+  </p>
+  <p class="contact-item">
+    <label for="contact-letter">Текст письма:</label>
+  <input id="contact-letter" type="text" name="letter" value="" placeholder="В свободной форме">
+  </p>
+      <button class="button" type="submit">ОТПРАВИТЬ</button>
+      <button class="modal-close" type="button">Закрыть</button>
+    </form>
+  </section>
+</main>
+    <footer class="main-footer">
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#"><img src="imgpng-nerds//vk-icon.png" class="vk-icon" width="26" height="15">Вконтакте</a></li>
+          <li><a class="social-button" href="#"><img src="img/png-nerds/fb-icon.png" class="fb-icon" width="12" height="22">Фейсбук</a></li>
+          <li><a class="social-button" href="#"><img src="img/png-nerds/insta-icon.png" class="insta-icon" width="21" height="21">Инстаграм</a></li>
+        </ul>
+      </div>
+      <h2>Давайте дружить, это выгодно!</h2>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </footer>
+</body>
+</html>
