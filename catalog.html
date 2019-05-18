@@ -26,20 +26,51 @@
   </header>
   <main class="container">
     <section class="search-settings">
+      <form class="filter" method="get" action="#">
+          <fieldset>
+            <legend>Сетка:</legend>
       <ul class="net">
-        <li><input type="radio" name="adapted" checked>Адаптивная</li>
-        <li><input type="radio" name="fixed"></li>
-        <li><input type="radio" name="rubber"></li>
+        <li>
+          <input type="radio" name="adapted" id="adapted" checked>
+          <label for="adapted">Адаптивная</label>
+        </li>
+        <li>
+          <input type="radio" name="fixed" id="fixed">
+          <label for="fixed">Фиксированная</label>
+        </li>
+        <li>
+          <input type="radio" name="rubber" id="rubber">
+          <label for="rubber">Резиновая</label>
+        </li>
       </ul>
-      <br>
-      <ul class="advantages">
-        <li><input type="checkbox" name="slider" checked>Слайдер</li>
-        <li><input type="checkbox" name="advantage-block">Блок преимуществ</li>
-        <li><input type="checkbox" name="news" checked>Новости</li>
-        <li><input type="checkbox" name="gallery">Галерея</li>
-        <li><input type="checkbox" name="trash-bin">Корзина</li>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>ОСОБЕННОСТИ:</legend>
+        <ul class="advantages">
+        <li>
+          <input type="checkbox" name="slider" id="slider" checked>
+          <label for="slider">Слайдер</label>
+        </li>
+        <li>
+          <input type="checkbox" name="advantage-block" id="advantage-block">
+          <label for="advantage-block">Блок преимуществ</label>
+        </li>
+        <li>
+          <input type="checkbox" name="news" checked id="news">
+          <label for="news">Новости</label>
+        </li>
+        <li>
+          <input type="checkbox" name="gallery" id="gallery">
+          <label for="gallery">Галерея</label>
+        </li>
+        <li>
+          <input type="checkbox" name="trash-bin" id="trash-bin">
+          <label for="trashbin">Корзина</label>
+        </li>
       </ul>
-      <input type="submit" name="show" value="ПОКАЗАТЬ">
+    </fieldset>
+  <button type="submit" name="show" value="ПОКАЗАТЬ">ПОКАЗАТЬ</button>
     </section>
     <section class="gallery">
       <ul class="gallery">
@@ -60,6 +91,26 @@
         <li><img src="img/png-nerds/img-kvast-jpg.png" class="img-kvastjpg" width="360" height="576"></li>
       </ul>
     </section>
+    <section class="contact-us">
+      <h2>Напишите нам</h2>
+      <form class="contact-form" action="#" method="post">
+  <p class="contact-item">
+    <label for="contact-name">Ваше имя:</label>
+  <input id="contact-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+  </p>
+  <p class="contact-item">
+    <label for="contact-email">Ваш e-mail:</label>
+    <input id="contact-email" type="text" name="email" value="" placeholder="email@example.com">
+  </p>
+  <p class="contact-item">
+    <label for="contact-letter">Текст письма:</label>
+  <input id="contact-letter" type="text" name="letter" value="" placeholder="В свободной форме">
+  </p>
+      <button class="button" type="submit">ОТПРАВИТЬ</button>
+      <button class="modal-close" type="button">Закрыть</button>
+    </form>
+  </section>
+</main>
     <footer class="main-footer">
       <div class="footer-social">
         <ul>
