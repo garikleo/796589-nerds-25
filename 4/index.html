@@ -4,24 +4,28 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <base href="https://htmlacademy-htmlcss.github.io/796589-nerds-25/4/">
 </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo">
+      <a class="main-header-logo" href="index.html">
         <img src="img/png-nerds/nerds-logo.png" class="nerds-logo" width="160" height="65" alt="Нёрдс">
       </a>
       <ul class="site-navigation">
         <li><a href="studio.html">Студия</a></li>
         <li><a href="customers.html">Клиенты</a></li>
-        <li><a href="store.html">Магазин</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
-        <img src="img/png-nerds/basket-icon.png" class="cart-icon" width="15" height="15">
-        <li class="cart">Корзина</li>
+        <li class="cart">
+          <a href="#"><img src="img/png-nerds/basket-icon.png" class="cart-icon" width="15" height="15">Корзина</a>
+        </li>
       </ul>
       <h1>Долго, дорого, скрупулезно.</h1>
       <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -32,39 +36,42 @@
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="features-list">
-        <li class="feature-item">
+        <li class="feature-item1">
           <img src="img/png-nerds/advantage-picture-red.png" class="feature-picture-red" width="300" height="146">
-          <h3>Веб-сайты</h3>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <h3 class="web-sites">Веб-сайты</h3>
+          <p class="info1">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <br>
           <a href="purchase1.html">ЗАКАЗАТЬ</a>
         </li>
-        <li class="feature-item">
+        <li class="feature-item2">
           <img src="img/png-nerds/advantage-picture-green.png" class="feature-picture-green" width="300" height="146">
-          <h3>Приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <h3 class="apps">Приложения</h3>
+          <p class="info2">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <br>
           <a href="purchase2.html">ЗАКАЗАТЬ</a>
         </li>
-        <li class="feature-item">
+        <li class="feature-item3">
           <img src="img/png-nerds/advantage-picture-yellow.png" class="feature-picture-yellow" width="300" height="146">
-          <h3>Презентации</h3>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <h3 class="presentations">Презентации</h3>
+          <p class="info3">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <br>
           <a href="purchase3.html">ЗАКАЗАТЬ</a>
         </li>
       </ul>
     </section>
     <section class="about-us">
-      <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+      <h2 class="us">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
         превыше креатива. Работаем не покладая рук, как роботы.</p>
       <h4>Выполняем заказы на разработку:</h4>
       <ul class="our-work">
-        <li class="work-item">
+        <li class="work-item1">
           <p>Веб-сайтов любой сложности</p>
         </li>
-        <li class="work-item">
+        <li class="work-item2">
           <p>Мобильных приложений для iOS и Android</p>
         </li>
-        <li class="work-item">
+        <li class="work-item3">
           <p>Слайдшоу и видео для корпоративных презентаций</p>
         </li>
       </ul>
@@ -94,26 +101,26 @@
       <a class="button" href="contact-us">Напишите нам</a>
     </section>
 
-  <section class="contact-us">
-    <h2>Напишите нам</h2>
-    <form class="contact-form" action="#" method="post">
-<p class="contact-item">
-  <label for="contact-name">Ваше имя:</label>
-<input id="contact-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-</p>
-  <p class="contact-item">
-  <label for="contact-email">Ваш e-mail:</label>
-  <input id="contact-email" type="text" name="email" value="" placeholder="email@example.com">
-</p>
-<p class="contact-item">
-  <label for="contact-letter">Текст письма:</label>
-<input id="contact-letter" type="text" name="letter" value="" placeholder="В свободной форме">
-</p>
-    <button class="button" type="submit">ОТПРАВИТЬ</button>
-    <button class="modal-close" type="button">Закрыть</button>
-  </form>
-</section>
-</main>
+    <section class="contact-us">
+      <h2>Напишите нам</h2>
+      <form class="contact-form" action="http://echo.htmlacademy.ru" method="post">
+        <p class="contact-item">
+          <label for="contact-name">Ваше имя:</label>
+          <input id="contact-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="contact-item">
+          <label for="contact-email">Ваш e-mail:</label>
+          <input id="contact-email" type="text" name="email" value="" placeholder="email@example.com">
+        </p>
+        <p class="contact-item">
+          <label for="contact-letter">Текст письма:</label>
+          <input id="contact-letter" type="text" name="letter" value="" placeholder="В свободной форме">
+        </p>
+        <button class="button" type="submit">ОТПРАВИТЬ</button>
+        <button class="modal-close" type="button">Закрыть</button>
+      </form>
+    </section>
+  </main>
   <footer class="main-footer">
     <div class="footer-social">
       <ul>
@@ -122,8 +129,9 @@
         <li><a class="social-button" href="#"><img src="img/png-nerds/insta-icon.png" class="insta-icon" width="21" height="21">Инстаграм</a></li>
       </ul>
     </div>
-    <h2>Давайте дружить, это выгодно!</h2>
+    <h2 class="friendship">Давайте дружить, это выгодно!</h2>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
 </body>
+
 </html>
