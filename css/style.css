@@ -50,11 +50,108 @@ a {
 }
 
 .features-list {
-  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
 }
 
-.feature-item {
-  text-align: center;
+.feature-item1 {
+  text-align: left;
+}
+
+.web-sites h3 {
+  width: 135px;
+  height: 23px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--black);
+}
+
+.info1 {
+  width: 238px;
+  height: 41px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #283136;
+}
+
+.feature-item2 {
+  text-align: left;
+}
+
+.apps h3 {
+  width: 166px;
+  height: 19px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--black);
+}
+
+.info2 {
+  width: 239px;
+  height: 40px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #283136;
+}
+
+.feature-item3 {
+  text-align: left;
+}
+
+.presentations h3 {
+  width: 171px;
+  height: 22px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--black);
+}
+
+.info3 {
+  width: 213px;
+  height: 40px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #283136;
 }
 
 .feature-item h3 {
@@ -84,7 +181,7 @@ a {
 }
 
 fieldset {
-    border: 0;
+  border: 0;
 }
 
 .visually-hidden {
