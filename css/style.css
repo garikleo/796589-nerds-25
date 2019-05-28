@@ -3,12 +3,20 @@ body {
   padding: 0;
   font-family: Roboto, sans-serif;
   font-size: 16px;
-  color: #000000;
+  /*color: #000000;*/
+  color: #283136;
+  font-weight: : normal;
+  min-width: 1200px;
 }
 
 a {
   text-decoration: none;
   color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .contact-us {
@@ -19,33 +27,45 @@ a {
   width: 160px;
   height: 65px;
 
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: flex-start;
 }
 
 .main-navigation {
   font-size: 16px;
   line-height: 1.88;
   color: #000000;
+  background-color: #eeeeee;
 }
 
 .site-navigation {
   list-style: none;
   display: flex;
+
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
 	align-items: center;
 	align-content: center;
   list-style-type: none;
+  width: 445px;
+  margin: 0;
+  padding: 0;
 }
 
 .user-navigation {
   list-style: none;
   display: flex;
-  	flex-direction: row;
-  	flex-wrap: nowrap;
-  	justify-content: flex-end;
-  	align-items: center;
-  	align-content: flex-end;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: flex-end;
   list-style-type: none;
 }
 
@@ -174,6 +194,12 @@ a {
 
 .footer-social ul {
   list-style: none;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
 }
 
 .social-button {
@@ -184,9 +210,13 @@ fieldset {
   border: 0;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visuaaly-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
   display: none;
 }
+
 
 .friendship h2 {
   font-family: Roboto;
@@ -211,6 +241,10 @@ fieldset {
   color: #000000;
 }
 
+.template {
+  background-color: #eeeeee;
+}
+
 .friends-list {
   text-align: center;
   display: flex;
@@ -231,11 +265,24 @@ fieldset {
   list-style-type: none;
 }
 
+.form label {
+  color: #283136;
+}
+
 .qualities {
   list-style-type: none;
 }
 
 .gallery {
   list-style-type: none;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
+}
+
+.browser {
+  object-fit: contain;
 }
