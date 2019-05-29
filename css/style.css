@@ -3,9 +3,8 @@ body {
   padding: 0;
   font-family: Roboto, sans-serif;
   font-size: 16px;
-  /*color: #000000;*/
   color: #283136;
-  font-weight: : normal;
+  font-weight: normal;
   min-width: 1200px;
 }
 
@@ -26,13 +25,19 @@ img {
 .main-header-logo {
   width: 160px;
   height: 65px;
+}
 
-  display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: flex-start;
+.main-header-logo:hover {
+  opacity: 0.8;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
+.site-navigation .current {
+  border-bottom: 2px solid #fb565a;
+  padding-bottom: 8px;
 }
 
 .main-navigation {
@@ -45,14 +50,16 @@ img {
 .site-navigation {
   list-style: none;
   display: flex;
-
-  flex-direction: row;
+  min-width: 440px;
+  margin-left: 200px;
+  min-width: 490px;
+  background-color: #eeeeee;
+  /*flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
 	align-items: center;
 	align-content: center;
-  list-style-type: none;
-  width: 445px;
+  list-style-type: none;*/
   margin: 0;
   padding: 0;
 }
@@ -60,23 +67,19 @@ img {
 .user-navigation {
   list-style: none;
   display: flex;
-
-  flex-direction: row;
+  background-color: #eeeeee;
+  /*flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: center;
   align-content: flex-end;
-  list-style-type: none;
+  list-style-type: none;*/
 }
 
 .site-navigation a,
 .user-navigation a {
   color: #000000;
-  font-family: Roboto;
   font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 30px;
   letter-spacing: normal;
   color: #000000;
@@ -97,25 +100,15 @@ img {
 }
 
 .web-sites h3 {
-
-  font-family: Roboto;
   font-size: 24px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 30px;
   letter-spacing: normal;
   text-align: left;
 
 }
 
-.info1 {
-
-  font-family: Roboto;
+.info {
   font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 24px;
   letter-spacing: normal;
   text-align: left;
@@ -123,55 +116,19 @@ img {
 }
 
 .apps h3 {
-
-  font-family: Roboto;
   font-size: 24px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 30px;
   letter-spacing: normal;
   text-align: left;
 
-}
-
-.info2 {
-
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 24px;
-  letter-spacing: normal;
-  text-align: left;
-  color: #283136;
 }
 
 .presentations h3 {
-
-  font-family: Roboto;
   font-size: 24px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 30px;
   letter-spacing: normal;
   text-align: left;
 
-}
-
-.info3 {
-
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 24px;
-  letter-spacing: normal;
-  text-align: left;
-  color: #283136;
 }
 
 .feature-item h3 {
@@ -218,7 +175,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-.friendship h2 {
+.friendship {
   font-family: Roboto;
   font-size: 36px;
   font-weight: bold;
@@ -230,12 +187,7 @@ input[type="radio"].visually-hidden {
 }
 
 .us h2 {
-
-  font-family: Roboto;
   font-size: 36px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 36px;
   letter-spacing: normal;
   color: #000000;
@@ -283,6 +235,10 @@ input[type="radio"].visually-hidden {
 	align-content: space-around;
 }
 
+.gallery-item:hover .browser {
+  background: url("img/png-nerds/browser.png");
+}
+
 .browser {
-  object-fit: contain;
+  background: url("img/png-nerds/browser.png");
 }
