@@ -202,7 +202,7 @@ img {
   height: 15px;
 }
 
-.browser-image {
+/*/.browser-image {
   width: 26px;
   height: 15px;
   opacity: 0.12;
@@ -211,7 +211,7 @@ img {
 .browser-image:hover {
   width: 26px;
   height: 15px;
-}
+}*/
 
 .main-navigation {
   font-size: 16px;
@@ -405,8 +405,13 @@ input[type="radio"].visually-hidden {
 
 .gallery-item:hover .browser {
   background: url("img/png-nerds/browser.png");
+  width: 360px;
+  height: 40px;
 }
 
 .browser {
   background: url("img/png-nerds/browser.png");
+  width: 360px;
+  height: 40px;
+  opacity: 0.12;
 }
