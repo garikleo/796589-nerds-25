@@ -34,6 +34,10 @@ img {
   line-height: 30px;
   color: #000000;
   background-color: #eeeeee;
+  display: flex;
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .site-navigation {
@@ -42,17 +46,16 @@ img {
   margin-left: 200px;
   min-width: 490px;
   background-color: #eeeeee;
-
 }
 
 .site-navigation li {
-  display: inline-block;
   margin-right: 45px;
 }
 
 .site-navigation ul {
   padding-left: 0;
   margin-top: 26px;
+
 }
 
 .site-navigation a {
@@ -68,8 +71,13 @@ img {
   margin-left: 235px;
   margin-top: 26px;
   background-color: #eeeeee;
-  list-style-type: none;
   text-transform: uppercase;
+
+}
+
+.user-navigation,
+.site-navigation {
+  list-style-type: none;
 }
 
 .site-navigation a,
@@ -80,9 +88,16 @@ img {
   letter-spacing: normal;
 }
 
-.main-header-logo {
-  width: 160px;
-  height: 65px;
+.user-navigation::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -26px;
+  width: 15px;
+  height: 15px;
+  background: url("../img/png-nerds/basket-icon.png");
+  background-position: 1px 1px;
+  z-index: 10;
 }
 
 .main-header-logo:hover {
@@ -132,7 +147,7 @@ img {
 
 .container {
   position: relative;
-  height: 310px;
+  min-height: 310px;
 }
 
 .container input[type=radio] {
