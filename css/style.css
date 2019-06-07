@@ -69,6 +69,7 @@ img {
   margin-top: 26px;
   background-color: #eeeeee;
   list-style-type: none;
+  text-transform: uppercase;
 }
 
 .site-navigation a,
@@ -528,17 +529,17 @@ input[type="radio"].visually-hidden {
   align-content: space-around;
 }
 
-.gallery-item:hover .browser {
-  background: url("img/png-nerds/browser.png");
-  width: 360px;
-  height: 40px;
-}
-
 .browser {
-  background: url("img/png-nerds/browser.png");
+  background: url("../img/png-nerds/browser.png");
   width: 360px;
   height: 40px;
   opacity: 0.12;
+}
+
+.gallery-item:hover .browser {
+  width: 360px;
+  height: 40px;
+  opacity: 1;
 }
 
 .main-footer {
