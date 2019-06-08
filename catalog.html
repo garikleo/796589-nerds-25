@@ -30,52 +30,83 @@
   </header>
   <main class="container">
     <h1 class="template">Магазин готовых шаблонов</h1>
+    <div class="content">
+      <div class="container">
+        <div class="filters">
+          <legend>Стоимость:</legend>
+          <form class="form" action="" method="get">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
+            </div>
+            <br>
     <section class="search-settings">
+      <div class="web">
       <form class="filter" method="get" action="http://echo.htmlacademy.ru">
         <fieldset>
           <legend>Сетка:</legend>
           <ul class="net">
             <li>
               <input class="radio" type="radio" name="net" id="adapted" checked>
+              <span class="radio-custom"></span>
               <label for="adapted">Адаптивная</label>
             </li>
             <li>
               <input class="radio" type="radio" name="net" id="fixed">
+              <span class="radio-custom"></span>
               <label for="fixed">Фиксированная</label>
             </li>
             <li>
               <input class="radio" type="radio" name="net" id="rubber">
+              <span class="radio-custom"></span>
               <label for="rubber">Резиновая</label>
             </li>
           </ul>
         </fieldset>
+      </div>
         <br>
+        <div class="qualities">
         <fieldset>
           <legend>ОСОБЕННОСТИ:</legend>
           <ul class="qualities">
             <li>
               <input class="checkbox" type="checkbox" name="quality" id="slider" checked>
+              <span class="checkbox-custom"></span>
               <label for="slider" class="form">Слайдер</label>
             </li>
             <li>
               <input class="checkbox" type="checkbox" name="quality" id="advantage-block">
+              <span class="checkbox-custom"></span>
               <label for="advantage-block" class="form">Блок преимуществ</label>
             </li>
             <li>
               <input class="checkbox" type="checkbox" name="quality" id="advantage-block">
+              <span class="checkbox-custom"></span>
               <label for="news" class="form">Новости</label>
             </li>
             <li>
               <input class="checkbox" type="checkbox" name="quality" id="gallery">
+              <span class="checkbox-custom"></span>
               <label for="gallery" class="form">Галерея</label>
             </li>
             <li>
               <input class="checkbox" type="checkbox" name="quality" id="trash-bin">
+              <span class="checkbox-custom"></span>
               <label for="trash-bin" class="form">Корзина</label>
             </li>
           </ul>
           <button class="button" type="submit">Показать</button>
         </fieldset>
+      </div>
       </form>
     </section>
     <section class="gallery">

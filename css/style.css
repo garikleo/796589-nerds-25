@@ -153,16 +153,16 @@ img {
   height: 2px;
 }
 
-.main-slider {
+.slider-background {
   background-color: #eeeeee;
 }
 
-.container {
+.slider {
   position: relative;
   min-height: 310px;
 }
 
-.container input[type=radio] {
+.slider input[type=radio] {
   position: absolute;
   opacity: 0;
 }
@@ -190,9 +190,9 @@ img {
   cursor: pointer;
 }
 
-#btn-1:checked~.slider-controls label[for="btn-1"],
-#btn-2:checked~.slider-controls label[for="btn-2"],
-#btn-3:checked~.slider-controls label[for="btn-3"] {
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
   background: #c1c1c1;
 }
 
@@ -248,7 +248,7 @@ img {
   display: block;
 }
 
-.seemore {
+/*.seemore {
   width: 240px;
   height: 50px;
   margin-top: 25px;
@@ -257,9 +257,9 @@ img {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
-}
+}*/
 
-.seemore:hover {
+.slide .button:hover {
   width: 240px;
   height: 50px;
   background-color: #e74246;
@@ -269,13 +269,20 @@ img {
   color: #ffffff;
 }
 
-.seemore:active {
+.slide .button:active {
   width: 240px;
   height: 50px;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
   opacity: : 0.3;
+}
+
+.slide .button {
+  width:240px;
+  height: 50px;
+  margin-top:25px;
+  background:#fb565a;
 }
 
 .features-list a {
@@ -553,6 +560,151 @@ input[type="radio"].visually-hidden {
   justify-content: space-around;
   align-items: center;
   align-content: stretch;
+}
+
+.template {
+  height: 233px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.content {
+  padding-top: 62px;
+}
+
+.filters {
+  width: 260px;
+  margin-right: 100px;
+}
+
+.content legend,
+.content ul {
+  margin-top: 0;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 50px;
+  margin-bottom: 62px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 20px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  width: 60px;
+  margin-left: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.web,
+.features {
+  margin-bottom: 43px;
+}
+
+.web label {
+  display: block;
+}
+
+.features label {
+  display: block;
+}
+
+.form .btn {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  width: 260px;
+  height: 50px;
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.checkbox,
+.radio {
+  display: none;
+}
+
+.radio-custom {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  border: 3px solid #b8b8b8;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.checkbox-custom {
+  position: relative;
+  height: 23px;
+  width: 23px;
+  border: 3px solid #b8b8b8;
+  border-radius: 3px;
+  box-sizing: border-box;
 }
 
 .our-work {
