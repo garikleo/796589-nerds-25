@@ -517,10 +517,6 @@ img {
   background-image: url("../img/png-nerds/insta-icon.png");
 }
 
-fieldset {
-  border: 0;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visuaaly-hidden,
 input[type="radio"].visually-hidden {
@@ -707,6 +703,83 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 }
 
+.result-top {
+  display: flex;
+  padding-left: 40px;
+  align-items: center;
+}
+
+.result-top h2 {
+  display: inline-block;
+  width: 360px;
+}
+
+.sort-types {
+  width: 360px;
+  padding: 0;
+  margin-left: 40px;
+}
+
+.sort-types li {
+  display: inline-block;
+}
+
+.sort-types a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;;
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+a.current {
+  opacity: 1;
+}
+
+.by-price,
+.by-type {
+  margin-right: 22px;
+}
+
+.by-name {
+  margin-right: 46px;
+}
+
+.less-to-more {
+  position: relative;
+  margin-right: 25px;
+}
+
+.less-to-more::before {
+  content: "";
+  position: absolute;
+
+  top: 4px;
+  left: 0;
+
+  width: 9px;
+  height: 9px;
+  background: #ffffff url("../img/sort-down.png") no-repeat;
+}
+
+.more-to-less {
+    position: relative;
+}
+
+.more-to-less::before {
+  content: "";
+  position: absolute;
+
+  top: -9px;
+  left: 0;
+
+  width: 9px;
+  height: 9px;
+  background: #ffffff url("../img/sort-up.png") no-repeat;
+}
+
+
 .our-work {
   list-style-type: none;
 }
@@ -754,4 +827,28 @@ input[type="radio"].visually-hidden {
   width: 360px;
   height: 40px;
   opacity: 1;
+}
+
+.content-navigation {
+  padding-left: 40px;
+}
+
+.pagination .button {
+  display: inline-block;
+  background-color: #eeeeee;
+  border: 3px solid #eeeeee;
+  min-width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+.pagination .next {
+  padding-left: 79px;
+  padding-right: 79px;
+}
+
+.pagination .current {
+  background-color: #ffffff;
 }
