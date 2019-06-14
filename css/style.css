@@ -1043,6 +1043,12 @@ a.current {
   opacity: 0.1;
 }
 
+.map {
+  height: 416px;
+  width: 100%;
+  position: relative;
+}
+
 .contact-us {
   display: flex;
   flex-wrap: wrap;
