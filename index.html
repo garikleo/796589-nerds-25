@@ -31,13 +31,13 @@
   <main class="container">
     <div class="slider-background">
       <div class="slider container">
-        <input type="radio" id="btn-1" name="toggle" checked>
-        <input type="radio" id="btn-2" name="toggle">
-        <input type="radio" id="btn-3" name="toggle">
+        <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="btn-3" name="toggle">
         <div class="slider-controls">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-          <label for="btn-3"></label>
+          <label class="slider-controls-item slider-controls-item--1" for="btn-1"></label>
+          <label class="slider-controls-item slider-controls-item--2" for="btn-2"></label>
+          <label class="slider-controls-item slider-controls-item--3" for="btn-3"></label>
         </div>
         <div class="main-slider-container">
           <div class="slide">
@@ -109,8 +109,8 @@
         <div class="logo">
           <img width="360" height="208" src="img/png-nerds/nerds-picture.png" class="nerds-picture" alt="#">
         </div>
-        <span>с 2004 года Любим точность во всем:</span>
         <section class="stat-info">
+          <span>с 2004 года Любим точность во всем:</span>
           <div class="column">
             <b>146<span class="percent">%</span></b>
             <p>Уровень самоотдачи</p>
@@ -151,20 +151,20 @@
         <button class="button" href="contact-us">Напишите нам</a>
       </div>
 </div>
-      <section class="write-us">
+      <section class="modal modal-write">
         <h2>Напишите нам</h2>
         <form class="contact-form" action="http://echo.htmlacademy.ru" method="post">
           <p class="contact-item">
-            <label for="contact-name">Ваше имя:</label>
-            <input id="contact-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+            <label class="visually-hidden" for="contact-name">Ваше имя:</label>
+            <input class="write-icon-name" id="contact-name" type="text" name="name" value="" placeholder="Имя Фамилия">
           </p>
           <p class="contact-item">
-            <label for="contact-email">Ваш e-mail:</label>
-            <input id="contact-email" type="text" name="email" value="" placeholder="email@example.com">
+            <label class="visually-hidden" for="contact-email">Ваш e-mail:</label>
+            <input class="write-icon-email" id="contact-email" type="text" name="email" value="" placeholder="email@example.com">
           </p>
           <p class="contact-item">
-            <label for="contact-letter">Текст письма:</label>
-            <input id="contact-letter" type="text" name="letter" value="" placeholder="В свободной форме">
+            <label class="visually-hidden" for="contact-letter">Текст письма:</label>
+            <input class="write-icon-text"id="contact-letter" type="text" name="letter" value="" placeholder="В свободной форме">
           </p>
           <button class="button" type="submit">ОТПРАВИТЬ</button>
           <button class="modal-close" type="button">Закрыть</button>

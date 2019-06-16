@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #283136;
   font-weight: normal;
@@ -153,6 +153,13 @@ img {
   background-color: #eeeeee;
 }
 
+.slider .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+
 .slider {
   position: relative;
   min-height: 310px;
@@ -164,26 +171,48 @@ img {
 }
 
 .slider-controls {
-  postion: absolute;
-  bottom: 95px;
+  position: absolute;
+  bottom: 104px;
   left: 50%;
-  width: 200px;
-  height: 10px;
+  width: 160px;
+  height: 18px;
   margin-left: -100px;
   text-align: center;
-  z-index: 1000;
+  z-index: 100;
+  font-size: 0;
+  transform: translateX(-50%);
 }
 
 .slider-controls label {
   display: inline-block;
-  width: 4px;
-  height: 4px;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
   margin: 0 3px;
   background: white;
   border: 3px solid white;
   vertical-align: top;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.slider-controls label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.main-slider-container {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 #btn-1:checked~.slider-controls label[for="btn-1"],
@@ -205,6 +234,8 @@ img {
   width: 380px;
   padding: 30px 0;
   color: #283136;
+  /*display: none;
+  padding: 78px 0 80px 0;*/
 }
 
 .slide-slogan {
@@ -217,43 +248,65 @@ img {
 .slide:nth-child(1) {
   background-image: url("../img/png-nerds/slide-picture1.png");
   background-repeat: no-repeat;
-  background-position: 100% 10px;
+  background-position: 93% 18px;
 }
 
 .slide:nth-child(2) {
   background-image: url("../img/png-nerds/slide-picture2.png");
   background-repeat: no-repeat;
-  background-position: 100% 10px;
+  background-position: 100% 0;
 }
 
 .slide:nth-child(3) {
   background-image: url("../img/png-nerds/slide-picture3.png");
   background-repeat: no-repeat;
-  background-position: 100% 10px;
+  background-position: 100% 20px;
 }
 
-#btn-1:checked~.slides .slide:nth-child(1) {
+#btn-1:checked ~ .slides .slide:nth-child(1) {
   display: block;
 }
 
-#btn-2:checked~.slides .slide:nth-child(2) {
+#btn-2:checked ~ .slides .slide:nth-child(2) {
   display: block;
 }
 
-#btn-3:checked~.slides .slide:nth-child(3) {
+#btn-3:checked ~ .slides .slide:nth-child(3) {
   display: block;
 }
 
-/*.seemore {
-  width: 240px;
-  height: 50px;
-  margin-top: 25px;
-  background-color: #fb565a;
-  line-height: 13px;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-}*/
+#btn-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#btn-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#btn-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.slide h1 {
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.slide p {
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
 .slide .button:hover {
   width: 240px;
   height: 50px;
@@ -274,10 +327,20 @@ img {
 }
 
 .slide .button {
+  display: block;
   width: 240px;
+  padding: 13px 0;
+  font-size: 16px;
   height: 50px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
   margin-top: 25px;
   background: #fb565a;
+  border-radius: 3px;
+  border: none;
 }
 
 .features-list a {
@@ -579,6 +642,17 @@ input[type="radio"].visually-hidden {
   margin-right: 100px;
 }
 
+.content h2,
+.content ul {
+  margin-top: 0;
+}
+
+.content h2 {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
 /*.content legend,
 .content ul {
   margin-top: 0;
@@ -666,11 +740,11 @@ input[type="radio"].visually-hidden {
 }
 
 .web label {
-  display: block;
+  display: flex;
 }
 
 .qualities label {
-  display: block;
+  display: flex;
 }
 
 .form .button {
@@ -720,7 +794,7 @@ input[type="radio"].visually-hidden {
 
 .checkbox:checked+.checkbox-custom::before {
   content: "";
-  display: block;
+  display: flex;
   position: absolute;
   top: -3px;
   left: -3px;
@@ -733,7 +807,7 @@ input[type="radio"].visually-hidden {
 
 .radio:checked+.radio-custom::before {
   content: "";
-  display: block;
+  display: flex;
   position: absolute;
   top: 5px;
   left: 5px;
@@ -825,10 +899,12 @@ a.current {
 
 .information.container {
   border-top: 2px solid #eeeeee;
+  display: flex;
 }
 
 .stat-info .column {
   display: inline-block;
+  vertical-align: top;
 }
 
 .info {
@@ -971,14 +1047,6 @@ a.current {
   background: url("../img/png-nerds/browser.png");
 }
 
-/*.layout-top span {
-  display: inline-block;
-  height: 14px;
-  width: 14px;
-  margin-left: 9px;
-  border-radius: 50%;
-  background-color: #ffffff;
-}*/
 .layout-menu {
   display: none;
   position: absolute;
@@ -1107,4 +1175,11 @@ a.current {
 
 .pagination .current {
   background-color: #ffffff;
+}
+
+.modal {
+  position: fixed;
+  width: 960px;
+  height: 590px;
+  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
