@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/short.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,6 +29,7 @@
       </ul>
     </nav>
   </header>
+  <main class="container">
   <div class="page-title slogan">
     <h1>Магазин готовых шаблонов</h1>
   </div>
@@ -50,7 +51,6 @@
               <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
             </div>
           </div>
-          <br>
 
           <div class="web">
             <!--<form class="filter" method="get" action="http://echo.htmlacademy.ru">-->
@@ -127,10 +127,6 @@
         <div class="result-content">
           <article class="layout">
             <div class="layout-top">
-
-              <!--<span></span>
-          <span></span>
-          <span></span>-->
             </div>
             <div class="image-content">
               <img src="img/png-nerds/img-sedona-jpg.png" class="img-sedonajpg" width="360" height="576" alt="#">
@@ -144,9 +140,6 @@
 
           <article class="layout">
             <div class="layout-top">
-              <!--<span></span>
-            <span></span>
-            <span></span>-->
             </div>
             <div class="image-content">
               <img src="img/png-nerds/img-pink-jpg.png" class="img-pinkjpg" width="360" height="576" alt="#">
@@ -160,9 +153,6 @@
 
           <article class="layout">
             <div class="layout-top">
-              <!--<span></span>
-              <span></span>
-              <span></span>-->
             </div>
             <div class="image-content">
               <img src="img/png-nerds/img-barbershop-jpg.png" class="img-barbershopjpg" width="360" height="576" alt="#">
@@ -176,9 +166,6 @@
 
           <article class="layout">
             <div class="layout-top">
-              <!--<span></span>
-                <span></span>
-                <span></span>-->
             </div>
             <div class="image-content">
               <img src="img/png-nerds/img-mishka-jpg.png" class="img-mishkajpg" width="360" height="576" alt="#">
@@ -192,9 +179,6 @@
 
           <article class="layout">
             <div class="layout-top">
-              <!--<span></span>
-              <span></span>
-              <span></span>-->
             </div>
             <div class="image-content">
               <img src="img/png-nerds/img-aplus-jpg.png" class="img-aplusjpg" width="360" height="576" alt="#">
@@ -208,9 +192,6 @@
 
           <article class="layout">
             <div class="layout-top">
-              <!--<span></span>
-              <span></span>
-              <span></span>-->
             </div>
             <div class="image-content">
               <img src="img/png-nerds/img-kvast-jpg.png" class="img-kvastjpg" width="360" height="576" alt="#">
@@ -242,29 +223,31 @@
         ул. Б. Конюшенная, д. 19/8</p>
 
       <p>тел. +7 (812) 275-75-75</p>
-      <button class="button">Напишите нам</button>
+      <a class="button button-write-to-us" href="form.html">Напишите нам</a>
     </div>
   </div>
-  <section class="modal modal-write">
+  <div class="modal-content">
+    <div class="write-us-popup">
     <h2>Напишите нам</h2>
+    <button class="modal-content-close-button" type="button">Закрыть</button>
     <form class="contact-form" action="http://echo.htmlacademy.ru" method="post">
-      <p class="contact-item">
-        <label class="visually-hidden" for="contact-name">Ваше имя:</label>
-        <input class="write-icon-name" id="contact-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-      </p>
-      <p class="contact-item">
-        <label class="visually-hidden" for="contact-email">Ваш e-mail:</label>
-        <input class="write-icon-email" id="contact-email" type="text" name="email" value="" placeholder="email@example.com">
-      </p>
-      <p class="contact-item">
-        <label class="visually-hidden" for="contact-letter">Текст письма:</label>
-        <input class="write-icon-text" id="contact-letter" type="text" name="letter" value="" placeholder="В свободной форме">
-      </p>
-      <button class="button" type="submit">ОТПРАВИТЬ</button>
-      <button class="modal-close" type="button">Закрыть</button>
-    </form>
-  </section>
-
+      <label>
+        <span>Ваше имя:</span>
+        <input type="text" name="Name" placeholder="Имя Фамилия">
+      </label>
+      <label>
+        <span>Ваш e-mail:</span>
+        <input type="text" name="E-mail" placeholder="email@example.com">
+      </label>
+      <label>
+        <span>Текст письма:</span>
+        <textarea type="text" name="Text" placeholder="В свободной форме"></textarea>
+      </label>
+      <button class="button write-us-send-button" type="submit">ОТПРАВИТЬ</button>
+      </form>
+  </div>
+</div>
+</main>
   <footer class="main-footer container">
     <div class="footer-social">
       <a class="social-button" href="#">
@@ -282,6 +265,6 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+  <script src="js/short.js"></script>
 </body>
-
 </html>
