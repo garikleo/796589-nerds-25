@@ -11,26 +11,26 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/png-nerds/nerds-logo.png" class="nerds-logo" width="160" height="65" alt="Нёрдс">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="studio.html">Студия</a></li>
-        <li><a href="customers.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="user-navigation">
-        <li>
-          <a href="#" class="cart">Корзина</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="header-logo">
+        <a href="index.html"><img src="img/png-nerds/nerds-logo.png" class="nerds-logo" width="160" height="65" alt="Нёрдс"></a>
+      </div>
+      <nav class="site-navigation style-menu">
+        <ul>
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="customers.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="user-navigation style-menu">
+        <a href="#" class="cart">Корзина</a>
+      </div>
+    </div>
   </header>
-  <main class="container">
+  <main>
     <section class="slider">
-      <div class="container">
+      <div class="slide">
         <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
         <input class="visually-hidden" type="radio" id="product-2" name="toggle">
         <input class="visually-hidden" type="radio" id="product-3" name="toggle">
@@ -58,7 +58,7 @@
         </ul>
       </div>
     </section>
-    <section class="features">
+    <!--<section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="features-list">
         <li class="feature-item">
@@ -80,7 +80,47 @@
           <a href="purchase3.html" class="purchase3">ЗАКАЗАТЬ</a>
         </li>
       </ul>
-    </section>
+    </section>-->
+    <div class="products container">
+      <article class="item web">
+        <div class="product-image">
+          <img width="300" height="146" src="img/png-nerds/advantage-picture-red.png" alt="#">
+        </div>
+
+        <section class="product-info">
+          <h2>Веб-сайты</h2>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+        </section>
+
+        <a class="button purchase1" href="#">Заказать</a>
+      </article>
+
+      <article class="item app">
+        <div class="product-image">
+          <img width="300" height="146" src="img/png-nerds/advantage-picture-green.png" alt="#">
+        </div>
+
+        <section class="product-info">
+          <h2>Приложения</h2>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+        </section>
+
+        <a class="button purchase2" href="#">Заказать</a>
+      </article>
+
+      <article class="item presentation">
+        <div class="product-image">
+          <img width="300" height="146" src="img/png-nerds/advantage-picture-yellow.png" alt="#">
+        </div>
+
+        <section class="product-info">
+          <h2>Презентация</h2>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+        </section>
+
+        <a class="button purchase3" href="#">Заказать</a>
+      </article>
+    </div>
     <div class="information container">
       <section class="about-us">
         <h2 class="slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
@@ -97,8 +137,8 @@
         <div class="logo">
           <img width="360" height="208" src="img/png-nerds/nerds-picture.png" class="nerds-picture" alt="#">
         </div>
+        <span>с 2004 года Любим точность во всем:</span>
         <section class="stat-info">
-          <h3>с 2004 года Любим точность во всем:</h3>
           <div class="column">
             <b>146<span class="percent">%</span></b>
             <p>Уровень самоотдачи</p>
@@ -137,7 +177,7 @@
           ул. Б. Конюшенная, д. 19/8</p>
 
         <p>тел. +7 (812) 275-75-75</p>
-        <a class="button button-write-to-us" href="form.html">Напишите нам</a>
+        <a class="button-write-to-us button" href="form.html">Напишите нам</a>
       </div>
     </div>
     <div class="modal-content">
@@ -157,7 +197,7 @@
             <span>Текст письма:</span>
             <textarea name="Text" placeholder="В свободной форме"></textarea>
           </label>
-          <button class="button write-us-send-button" type="submit">ОТПРАВИТЬ</button>
+          <button class="write-us-send-button button" type="submit">ОТПРАВИТЬ</button>
         </form>
       </div>
     </div>
