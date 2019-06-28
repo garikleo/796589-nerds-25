@@ -11,25 +11,24 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/png-nerds/nerds-logo.png" class="nerds-logo" width="160" height="65" alt="Нёрдс">
-      </a>
-
-      <ul class="site-navigation">
-        <li><a href="studio.html">Студия</a></li>
-        <li><a href="customers.html">Клиенты</a></li>
-        <li><a href="catalog.html" class="site-navigation-active">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="user-navigation">
-        <li>
-          <a href="#" class="cart">Корзина</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="header-logo">
+        <a href="index.html"><img src="img/png-nerds/nerds-logo.png" class="nerds-logo" width="160" height="65" alt="Нёрдс"></a>
+      </div>
+      <nav class="site-navigation style-menu">
+        <ul>
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="customers.html">Клиенты</a></li>
+          <li><a class="current" href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="user-navigation style-menu">
+        <a href="#" class="cart">Корзина</a>
+      </div>
+    </div>
   </header>
-  <main class="container">
+  <main>
     <div class="page-title slogan">
       <h1>Магазин готовых шаблонов</h1>
     </div>
@@ -205,10 +204,10 @@
           </div>
           <div class="content-navigation">
             <nav class="pagination">
-              <a class="button current" href="#">1</a>
-              <a class="button" href="#">2</a>
-              <a class="button" href="#">3</a>
-              <a class="button next" href="#next">Следующая</a>
+              <a class="current" href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a class="next" href="#next">Следующая</a>
             </nav>
           </div>
         </div>
@@ -223,7 +222,7 @@
           ул. Б. Конюшенная, д. 19/8</p>
 
         <p>тел. +7 (812) 275-75-75</p>
-        <a class="button button-write-to-us" href="form.html">Напишите нам</a>
+        <a class="button-write-to-us button" href="form.html">Напишите нам</a>
       </div>
     </div>
     <div class="modal-content">
